@@ -75,6 +75,23 @@
 	$ python -m spacy download en_core_web_md
 	------------------------------------------------
 
+7. Update domain.yml, data/nlu_data.md and nlu_config.yml
+
+	edit : nlu_config.yml
+	------------------------------------------------
+	pipeline : "spacy_sklearn"
+	------------------------------------------------
+
+8. Run command for rasa bot model
+
+	command:
+	------------------------------------------------
+	$ python3 -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
+	------------------------------------------------
+	error logged:
+	------------------------------------------------
+	$ illegal instruction (core dumped)
+	------------------------------------------------
 
 
 

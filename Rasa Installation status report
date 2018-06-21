@@ -1,0 +1,104 @@
+1. tried installing rasas_core 
+
+	command:
+	------------------------------------------------
+	$ sudo python -m pip install rasa_core
+	------------------------------------------------
+	errors logged:
+	------------------------------------------------
+	  Found existing installation: requests 2.6.0
+	Cannot uninstall 'requests'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+	------------------------------------------------
+
+2. Installing python3.x for centos
+
+	command:
+	------------------------------------------------
+	a. $ sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+	------------------------------------------------
+		status completed
+	------------------------------------------------
+	b. $ sudo yum update
+	------------------------------------------------
+		status running
+	------------------------------------------------
+3. Installing pip for python3
+
+	command:
+	------------------------------------------------
+	a. $ sudo yum install python34-setuptools
+	------------------------------------------------
+		status completed
+	------------------------------------------------
+	b. $ sudo yum install python34-pip
+	------------------------------------------------
+		status completed
+	------------------------------------------------
+
+4. Install rasa_core trial 2
+
+	command:
+	------------------------------------------------
+	$ sudo python3 -m pip install rasa_core
+	------------------------------------------------
+	errors logged:
+	------------------------------------------------
+	PermissionError: [Errno 13] Permission denied: '/usr/bin/pip'
+	------------------------------------------------
+
+	errors logged:
+	------------------------------------------------
+	
+	#include "Python.h"
+		                ^
+	    compilation terminated.
+	    error: command 'gcc' failed with exit status 1
+	    
+	    ----------------------------------------
+	Command "/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-0r86ojbr/Twisted/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-tjwk4_y7/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-install-0r86ojbr/Twisted/
+
+	error resolved: installing developer tools for 
+	------------------------------------------------
+	$ sudo yum install python34-devel
+	------------------------------------------------
+
+5. Install rasa_nlu[sapcy] additional package spacy for rasanlu:
+	
+	command:
+	------------------------------------------------
+	$ sudo yum python3 -m pip install rasa_nlu[spacy] 
+	------------------------------------------------
+6. Downloading spacy core for web language supportd
+
+	command:
+	------------------------------------------------
+	$ python -m spacy download en_core_web_md
+	------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

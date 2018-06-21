@@ -1,0 +1,35 @@
+1. Error created at code : sudo pip install rasa_core
+-------------------------------------------------------------------------------------------------
+buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I/usr/include/python2.7 -c src/twisted/test/raiser.c -o build/temp.linux-x86_64-2.7/src/twisted/test/raiser.o
+  src/twisted/test/raiser.c:4:20: fatal error: Python.h: No such file or directory
+   #include "Python.h"
+                      ^
+  compilation terminated.
+  error: command 'gcc' failed with exit status 1
+  
+  ----------------------------------------
+  Failed building wheel for Twisted
+  Running setup.py clean for Twisted
+  Running setup.py bdist_wheel for html5lib ... done
+  Stored in directory: /home/nitin/.cache/pip/wheels/50/ae/f9/d2b189788efcf61d1ee0e36045476735c838898eef1cad6e29
+  Running setup.py bdist_wheel for zope.interface ... done
+  Stored in directory: /home/nitin/.cache/pip/wheels/c6/b2/d2/be6785a207eaa58d76debc10c9d5c66196b40a88abb61d6af7
+Successfully built future slackclient ConfigArgParse networkx jsonpickle PyYAML docopt simplejson pathlib gast absl-py termcolor functools32 html5lib zope.interface
+Failed to build subprocess32 Twisted
+ipaserver 4.5.0 requires dbus-python, which is not installed.
+ipaserver 4.5.0 requires dogtag-pki, which is not installed.
+ipaserver 4.5.0 requires pyldap>=2.4.15, which is not installed.
+ipapython 4.5.0 requires pyldap>=2.4.15, which is not installed.
+ipaserver 4.5.0 has requirement dnspython>=1.15, but you'll have dnspython 1.12.0 which is incompatible.
+ipapython 4.5.0 has requirement dnspython>=1.15, but you'll have dnspython 1.12.0 which is incompatible.
+rtslib-fb 2.1.63 has requirement pyudev>=0.16.1, but you'll have pyudev 0.15 which is incompatible.
+matplotlib 2.2.2 has requirement six>=1.10, but you'll have six 1.9.0 which is incompatible.
+tensorboard 1.8.0 has requirement six>=1.10.0, but you'll have six 1.9.0 which is incompatible.
+tensorflow 1.8.0 has requirement six>=1.10.0, but you'll have six 1.9.0 which is incompatible.
+slackclient 1.2.1 has requirement six<2.0a0,>=1.10, but you'll have six 1.9.0 which is incompatible.
+Installing collected packages: requests, PyJWT, twilio, fbmessenger, tqdm, future, numpy, PyYAML, docopt, python-dateutil, pykwalify, websocket-client, slackclient, redis, python-telegram-bot, scipy, keras-preprocessing, h5py, keras-applications, keras, mattermostwrapper, typing, ConfigArgParse, decorator, networkx, jsonpickle, graphviz, scikit-learn, colorhash, fakeredis, simplejson, jmespath, docutils, botocore, s3transfer, boto3, pathlib, cloudpickle, pyparsing, packaging, backports.functools-lru-cache, subprocess32, kiwisolver, cycler, matplotlib, greenlet, gevent, functools32, jsonschema, zope.interface, constantly, incremental, attrs, Automat, hyperlink, Twisted, klein, rasa-nlu, ruamel.ordereddict, ruamel.yaml, astor, protobuf, gast, markdown, html5lib, bleach, tensorboard, absl-py, backports.weakref, termcolor, enum34, grpcio, pbr, mock, tensorflow, rasa-core
+  Found existing installation: requests 2.6.0
+Cannot uninstall 'requests'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+-------------------------------------------------------------------------------------------------
+
+python3 -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose

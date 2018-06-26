@@ -33,3 +33,20 @@ Cannot uninstall 'requests'. It is a distutils installed project and thus we can
 -------------------------------------------------------------------------------------------------
 
 python3 -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
+
+
+
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -DWIN32=1 "-ID:\INSTALLED SOFTWARE\ANACONDA\include" "-ID:
+\INSTALLED SOFTWARE\ANACONDA\include" "-IC:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.14.26428\include" "-IC:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt" "-
+IC:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt" /Tcsrc/twisted/test/raiser.c /Fobuild\temp.win-amd64-3.6\Release\src/twist
+ed/test/raiser.obj
+    raiser.c
+    d:\installed software\anaconda\include\pyconfig.h(222): fatal error C1083: Cannot open include file: 'basetsd.h': No such file or directory
+    error: command 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX86\\x64\\cl.exe' failed with exit status 2
+
+    ----------------------------------------
+Command ""D:\INSTALLED SOFTWARE\ANACONDA\python.exe" -u -c "import setuptools, tokenize;__file__='C:\\Users\\nitinpan\\AppData\\Local\\Temp\\pip-install-qngpqtjv\\Twisted\\setup.py';f=getattr(tokenize, 'open',
+open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record C:\Users\nitinpan\AppData\Local\Temp\pip-record-6z6o1mbq\install-record.txt --single-version
+-externally-managed --compile" failed with error code 1 in C:\Users\nitinpan\AppData\Local\Temp\pip-install-qngpqtjv\Twisted\
+
+C:\Users\nitinpan>
